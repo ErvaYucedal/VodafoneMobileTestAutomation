@@ -1,120 +1,167 @@
 package stepDefinitions;
-
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.offset.PointOption;
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+import io.cucumber.java.en.*;
 import screen.VodafoneScreen;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
+import static io.appium.java_client.touch.offset.PointOption.point;
 import static utilities.ReusableMethods.*;
 
 public class VodafoneStepDefinitions {
 
     VodafoneScreen vodafoneScreen = new VodafoneScreen();
-    Driver driver=new Driver();
+    TouchAction ta=new TouchAction<>(Driver.getAppiumDriver());
+
     @Given("Opening app with Appium")
     public void opening_app_with_appium() throws InterruptedException {
         Driver.getAppiumDriver();
-        System.out.println(Driver.getAppiumDriver().getPageSource());
     }
 
-    @And("Login to the “Yanımda” from {string} button")
-    public void loginToTheYanımdaFromButton(String arg0) {
-
-        ReusableMethods.waitFor(5);
-        tapOn(vodafoneScreen.girisyap);
-        /*
-        ReusableMethods.waitFor(5);
-       vodafonePage.telefonNumarasi.sendKeys("5521572486");
-        ReusableMethods.waitFor(3);
-        tapOn(vodafonePage.kisiselVeriKabul);
-        ReusableMethods.waitFor(3);
-       tapOn(vodafonePage.haklar);
-        ReusableMethods.waitFor(3);
-        tapOn(vodafonePage.sendCode);
-        ReusableMethods.waitFor(3);
-        tapOn(vodafonePage.telefonaGelenKod);
-
-*/
+    @And("Login to the “Yanımda” as a VF customer")
+    public void loginToTheYanımdaAsAVFCustomer() {
+        try{
+        if (vodafoneScreen.vodafoneluGirisYap.isDisplayed())
+        {
         waitFor(5);
-        tapOnText("Giriş");
+        tapOn(vodafoneScreen.vodafoneluGirisYap);
+        waitFor(2);
+        tapOn(vodafoneScreen.mobilHesabim);
         waitFor(5);
-    }
+        vodafoneScreen.telefonNumarasi.sendKeys("5342621516");
+        waitFor(7);
+        vodafoneScreen.sifre.sendKeys("69053980");
+        waitFor(2);
+
+        if (vodafoneScreen.beniHatirla.getAttribute("checked").equals("false")){
+            tapOn(vodafoneScreen.beniHatirla);}
+        tapOn(vodafoneScreen.girisYap);
+        waitFor(8);
+        //Although the 'Beni Hatırla' box is active, it asks if you want to use the 'Beni Hatırla' feature again after logging in
+        tapOn(vodafoneScreen.beniHatirla2);
+        waitFor(5);
+        ta.tap(point(878,372)).release().perform();
+        String myString =vodafoneScreen.messageParse.getText();
+        String numString = myString.substring(30, 34);
+        System.out.println(numString);
+        waitFor(5);
+        vodafoneScreen.messageKapatma.click();
+        waitFor(5);
+        vodafoneScreen.dogrulamaKodu.sendKeys(numString);
+    }}catch (Exception e){
+            System.out.println("Vodafenulu olarak giriş yapildigi icin dogrudan devam edildi");
+        }
+        }
 
     @Then("User clicks {string} application")
     public void userClicksApplication(String arg0) {
+        tapOn(vodafoneScreen.herseyYanimda);}
+
+    @And("User clicks {string} page")
+    public void userClicksPage(String arg0) {
+        tapOn(vodafoneScreen.gununTeklifleri);
+    }
+    @And("User clicks {string} section")
+    public void userClicksSection(String title) {
+        tapOnText(title);
+    }
+    @And("User clicks Fiyat Araligi")
+    public void userClicksFiyatAraligi() {
         waitFor(3);
-        tapOn(vodafoneScreen.herseyYanimda);
+      //  ta.tap(TapOptions.tapOptions(1015,395)).waitAction(waitOptions(ofMillis(250))).perform();;
+        ta.press(PointOption.point(1015,395)).release().perform();
     }
 
-    @And("User clicks {string}")
-    public void userClicks(String arg0) {
+    @And("User lists the products from the {string} between {string}-{string} TL")
+    public void userListsTheProductsFromTheBetweenTL(String arg0, String aralik1, String aralik2) {
+        ta.tap(PointOption.point(90,367)).perform();
+        ReusableMethods.setNumber(aralik1);
         waitFor(3);
-        tapOnText("Kategoriler");
-        waitFor(8);
-        tapOnText("Kozmetik ve Kişisel Bakım");
+        ta.tap(PointOption.point(618,367)).perform();
+        waitFor(3);
+        ReusableMethods.setNumber(aralik2);
+        waitFor(3);
+        ta.tap(PointOption.point(537,1571)).perform();
+    }
+
+
+    @Then("User clicks {string} and chooses {string}")
+    public void userClicksAndChooses(String arg0, String arg1) {
+
+    }
+
+
+    @And("User adds the cheapest product to his-her favorites.")
+    public void userAddsTheCheapestProductToHisHerFavorites() {
+    }
+
+    @And("User adds the most expensive product to his-her basket.")
+    public void userAddsTheMostExpensiveProductToHisHerBasket() {
+    }
+
+
+}
+   /*@Test
+    public void str(){
+        String myString="Vodafone Yanımda uygulamasına 9396 tek kullanımlık şifrenizle giriş yapabilirsiniz. B003";
+        String numString=myString.substring(30,35);
+        System.out.println(numString); // send keys yapacagın yereyaz
+
+
 
 
     }
 
-    @When("User enters {string}")
-    public void userEnters(String arg0) {
-        waitFor(8);
-        tapOn(vodafoneScreen.favoriUrunler);
-        tapOnText("Filtrele");
-        waitFor(5);
+        yanımdaki uygulamayı aç
+        kayıtlı olmayan vodofone musterisi
+        telefon numarası giriş yap
+        kod gelecek
+        ana sayfa düğmesine bas
+       orda mesaja tıkla
+       mesajı locate et
+       icindeki text i al
+       ana sayfaya gel yanımda uygulamasın aç
+       substing sayısını giricem
+         */
 
-        TouchAction ta=new TouchAction<>(Driver.getAppiumDriver());
-        ta.tap(PointOption.point(1005,391)).perform();
+     /*TouchAction ta=new TouchAction<>(Driver.getAppiumDriver());
+        ta.tap(PointOption.point(537,2334)).perform();  // anasayfa
+        TouchAction ta=new TouchAction<>(Driver.getAppiumDriver());  //mesaj
+        ta.tap(PointOption.point(673,875)).perform();
 
+      */
 
-    }
+// ekranı yukarı kaydırma
 
-    @And("User lists the products from the “Favori Ürünler” between {int}{int} TL")
-    public void userListsTheProductsFromTheFavoriÜrünlerBetweenTL(int arg0, int arg1) {
-        waitFor(5);
+     /*   ta.press(PointOption.point(545,2322)).
+                waitAction(new WaitOptions().withDuration(Duration.ofMillis(3000)))
+                .moveTo(PointOption.point(545,2658))
+                .release()
+                .perform();
 
-        TouchAction ta=new TouchAction<>(Driver.getAppiumDriver());
-        ta.tap(PointOption.point(100,375)).perform();
+*/
 
-
-
-
-    }
+  /*
 
     @Then("User clicks {string} and chooses {string}")
     public void userClicksAndChooses(String arg0, String arg1) {
         tapOnText("Sırala");
-        TouchAction ta=new TouchAction<>(Driver.getAppiumDriver());
-        ta.tap(PointOption.point(61,1753)).perform();
+        ta.tap(point(61,1753)).perform();
+
     }
 
-
-    @And("User adds the cheapest product to his\\/her favorites.")
-    public void userAddsTheCheapestProductToHisHerFavorites() {
-        waitFor(3);
-        tapOn(vodafoneScreen.favoriteAdd);
-    }
 
     @And("User adds the most expensive product to his\\/her basket.")
     public void userAddsTheMostExpensiveProductToHisHerBasket() {
         tapOnText("Sırala");
         waitFor(3);
-        TouchAction ta=new TouchAction<>(Driver.getAppiumDriver());
-        ta.tap(PointOption.point(73,1857)).perform();
+        ta.tap(point(73,1857)).perform();
         waitFor(3);
         tapOn(vodafoneScreen.mostExpensiveProduct);
         waitFor(3);
         tapOn(vodafoneScreen.sepeteEkle);
-
     }
-}
-
-
-
+*/
 
 

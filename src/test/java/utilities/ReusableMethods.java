@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.Arrays;
 import java.util.List;
 
 public class ReusableMethods {
@@ -76,6 +77,48 @@ public class ReusableMethods {
             Thread.sleep(sec * 1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
+        }
+    }
+    public static void setNumber(String no){
+        TouchAction touchAction=new TouchAction<>(Driver.getAppiumDriver());
+        String[]sayi=no.split("");
+        System.out.println(Arrays.toString(sayi));
+        for (int i = 0; i <sayi.length ; i++) {
+            ReusableMethods.waitFor(2);
+            switch (sayi[i]){
+
+                case "1":
+                    touchAction.tap(PointOption.point(133,1797)).perform();
+                    break;
+                case "2":
+                    touchAction.tap(PointOption.point(402,1797)).perform();
+                    break;
+                case "3":
+                    touchAction.tap(PointOption.point(680,1797)).perform();
+                    break;
+                case "4":
+                    touchAction.tap(PointOption.point(133,1916)).perform();
+                    break;
+                case "5":
+                    touchAction.tap(PointOption.point(402,1916)).perform();
+                    break;
+                case "6":
+                    touchAction.tap(PointOption.point(680,1916)).perform();
+                    break;
+                case "7":
+                    touchAction.tap(PointOption.point(133,2064)).perform();
+                    break;
+                case "8":
+                    touchAction.tap(PointOption.point(402,2064)).perform();
+                    break;
+                case "9":
+                    touchAction.tap(PointOption.point(680,2064)).perform();
+                    break;
+                case "O":
+                    touchAction.press(PointOption.point(402,2202)).release().perform();
+                    break;
+            }
+
         }
     }
 }

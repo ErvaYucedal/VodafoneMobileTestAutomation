@@ -5,6 +5,8 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import org.openqa.selenium.By;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.net.MalformedURLException;
@@ -38,8 +40,8 @@ public class Driver {
 
             if (ConfigReader.getProperty("platformName").equals("Android")) {
                 //if you do not provide app path so you should provide "appPackage" and "appActivity"
-             //   desiredCapabilities.setCapability("appPackage","com.vodafone.selfservis");
-           //     desiredCapabilities.setCapability("appActivity","com.vodafone.selfservis.modules.dashboard.postpaid.PostPaidHomeActivity");
+
+           //
 
 
                 assert appiumServerURL != null;
@@ -66,4 +68,9 @@ public class Driver {
     }
 
 
+
+
+    public void findElement(By xpath) {
+        return;
+    }
 }
