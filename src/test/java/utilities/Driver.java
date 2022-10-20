@@ -30,7 +30,7 @@ public class Driver {
             desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, ConfigReader.getProperty("platformName"));
             desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, ConfigReader.getProperty("platformVersion"));
             desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, ConfigReader.getProperty("deviceName"));
-          //  desiredCapabilities.setCapability(MobileCapabilityType.APP, System.getProperty("user.dir")+ConfigReader.getProperty("appPath"));
+       //     desiredCapabilities.setCapability(MobileCapabilityType.APP, System.getProperty("user.dir")+ConfigReader.getProperty("appPath"));
           desiredCapabilities.setCapability(MobileCapabilityType.APP, "C:\\Users\\Meral\\IdeaProjects\\com.VodafoneMobileTestAutomation\\app\\com.vodafone.selfservis_15.9.6-24602_minAPI21(arm64-v8a,armeabi-v7a)(nodpi)_apkmirror.com.apk");
             desiredCapabilities.setCapability(MobileCapabilityType.NO_RESET, true);
             desiredCapabilities.setCapability("autoAcceptAlert",true);
@@ -40,8 +40,7 @@ public class Driver {
                 //if you do not provide app path so you should provide "appPackage" and "appActivity"
              //   desiredCapabilities.setCapability("appPackage","com.vodafone.selfservis");
            //     desiredCapabilities.setCapability("appActivity","com.vodafone.selfservis.modules.dashboard.postpaid.PostPaidHomeActivity");
-            //    desiredCapabilities.setCapability("appPackage","com.vodafone.selfservis");
-              //  desiredCapabilities.setCapability("appActivity","com.vodafone.selfservis.modules.prelogin.ui.dashboard.DashboardActivity");
+
 
                 assert appiumServerURL != null;
                 appiumDriver = new AndroidDriver(appiumServerURL,desiredCapabilities);

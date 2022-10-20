@@ -5,6 +5,7 @@ import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
+import org.junit.Before;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -66,5 +67,15 @@ public class ReusableMethods {
     public static void waitToBeClickable(MobileElement element, int timeout) {
         WebDriverWait wait = new WebDriverWait(Driver.getAppiumDriver(),timeout);
         wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
+
+    //   HARD WAIT WITH THREAD.SLEEP
+//   waitFor(5);  => waits for 5 second
+    public static void waitFor(int sec) {
+        try {
+            Thread.sleep(sec * 1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
