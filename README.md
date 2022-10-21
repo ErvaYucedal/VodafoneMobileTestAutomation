@@ -1,10 +1,26 @@
 # VodafoneMobileTestAutomation
 
 <hr/>
+### Yanımda Uygulaması <br/>
+Bana verilen taskte belirtildiği üzere; 
+Vodafone Yanımda uygulamasına müşteri girişi yapmak için kullanıcı bilgilerini girdim ve telefonuma 
+gelen şifreyi parse ederek giriş yaptım. Her şey Yanımda menüsüne tıklayarak Günün
+Tekliflerine tıkladım. Ürün filtreleme yaparak filtrelenen ürünler arasından en düşük ücretli ürünü favorilere,
+en yüksek ücretli ürünü sepetime ekledim. 
+Vodafone Yanımda mobil uygulamasının testlerini gerçekleştirdiğim bu projede Java8 ve Maven projesi oluşturup
+Cucumber BDD framework ile çalıştım. Cucumber Framework'unde OOP kopsepte uyarak POM dizayn modeli kullandım.
 
-Vodafone Yanımda mobil uygulamasının testlerini gerçekleştirdiğim bu projede 
-Cucumber BDD framework ile çalıştım.
-Cucumber Framework'ünde OOP konseptine uyarak POM dizayn modeli kullandım.
+
+Vsyor uygulaması ile USB aracılığıyla gerçek telefona bağlandım. Appium la bağlantıyı gerçekleştirip
+Appium Inspector'la locate aldım. Appium Inspectorla alamadığım locateleri telefonumun koordinatlarını 
+açıp Touch Action classı ile koordinatları girerek testi tamamladım. <br/>
+Xiaomi Note 9 Pro <br/>
+özellikler = Android 11,  ekran  1080 X 2400  <br/>
+<br/>
+<b>LÜTFEN BU ÖZELLİKLERE SAHİP TELEFONU KURUP TEST YAPINIZ.</b>
+<br/>
+
+<br/>
 
 <br/>
 
@@ -33,19 +49,7 @@ Pom.xml dosyasında kullanmak istediğimiz kodların kütüphanesini  <b> depend
 
 <hr/>
 
-# Appium testi
 
-### Yanımda Uygulaması <br/>
-Java8  ve Maven projesi oluşturulup cucumber BDD framework kullanılarak oluşturulmuştur.
-
-Vsyor uygulaması ile USB aracılığıyla gerçek telefona bağlandım. <br/>
-Xiaomi Note 9 Pro <br/>
-özellikler = Android 11,  ekran  1080 X 2400  <br/>
-<br/>
-<b>LÜTFEN BU ÖZELLİKLERE SAHİP TELEFONU KURUP TEST YAPINIZ.</b>
-<br/>
-
-<br/>
 
  
 
