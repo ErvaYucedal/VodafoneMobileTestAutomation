@@ -86,7 +86,9 @@ public class ReusableMethods {
         for (int i = 0; i <sayi.length ; i++) {
             ReusableMethods.waitFor(2);
             switch (sayi[i]){
-
+                case "0":
+                    touchAction.tap(PointOption.point(414,2138)).perform();
+                    break;
                 case "1":
                     touchAction.tap(PointOption.point(133,1797)).perform();
                     break;
@@ -114,9 +116,7 @@ public class ReusableMethods {
                 case "9":
                     touchAction.tap(PointOption.point(680,2064)).perform();
                     break;
-                case "O":
-                    touchAction.press(PointOption.point(402,2202)).release().perform();
-                    break;
+
             }
 
         }

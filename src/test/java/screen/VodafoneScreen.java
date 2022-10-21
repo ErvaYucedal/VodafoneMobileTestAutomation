@@ -49,8 +49,19 @@ public class VodafoneScreen {
     @AndroidFindBy(xpath = "//android.view.View[@content-desc=\"Tümü\"]/android.widget.TextView")
     public MobileElement gununTeklifleri;
 
+    @AndroidFindBy(xpath = "//android.widget.TextView[@text='Sırala']")
+    public MobileElement sirala;
+
     @AndroidFindBy(id="com.vodafone.selfservis:id/loginSMSCodeValid")
     public MobileElement dogrulamaKodu;
+
+    @AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.webkit." +
+            "WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View[6]/android.view.View/android.view.View/android.view.View[1]/android.widget.Button")
+    public MobileElement favorite;
+
+    @AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout/" +
+            "android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View[6]/android.view.View/android.view.View/android.view.View[1]")
+   public MobileElement mostExpensiveProduct;
 
     @AndroidFindBy(id = "com.vodafone.selfservis:id/privacyPolicyOneCB")
     public MobileElement kisiselVeriKabul;
@@ -69,9 +80,6 @@ public class VodafoneScreen {
             "android.view.View/android.view.View/android.view.View[6]/android.view.View[2]/android.view.View/android.view.View[1]/android.widget.Button")
     public MobileElement favoriteAdd;
 
-    @AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.webkit.WebView/" +
-            "android.webkit.WebView/android.view.View/android.view.View/android.view.View[6]/android.view.View[2]/android.view.View/android.view.View[1]")
-    public MobileElement mostExpensiveProduct;
 
     @AndroidFindBy(xpath = "//android.widget.Button[@text='Sepete ekle']")
     public MobileElement sepeteEkle;
