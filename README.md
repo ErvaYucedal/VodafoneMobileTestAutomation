@@ -17,7 +17,7 @@ en yüksek ücretli ürünü sepetime ekledim.
 Vodafone Yanımda mobil uygulamasının testlerini gerçekleştirdiğim bu projede önce manuel testi gerçekleştirdikten sonra
 mobil otomasyon testi için Java kodlama dilini ve  Cucumber BDD framework ile çalıştım. Cucumber Framework'unde
 OOP kopsepte uyarak POM dizayn modeli kullandım. 
-Projeyi yapılandırmak için Maven, versiyon kontrol aracı olarak Git/Github kullandım. 
+Projeyi yapılandırmak için Maven, versiyon kontrol aracı olarak Git/Github kullandım. Jenkins'te job oluşturarak Github hesabımla entegre ettim.
 <br/>
 <br/>
 
@@ -26,6 +26,7 @@ Projeyi yapılandırmak için Maven, versiyon kontrol aracı olarak Git/Github k
 <a href="https://www.appium.com" target="_blank" rel="noreferrer"> <img src="https://miro.medium.com/max/698/0*Ar7dArTvLIGrRs2n.png" alt="Selenium" width="100" height="50"/> </a>
 <a href="https://www.intelj.com" target="_blank" rel="noreferrer"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQak-N8W03mK25slV1lwM80i0y1obRPPJOaLA&usqp=CAU" alt="intelj" width="80" height="40"/> </a>
 <a href="https://www.maven.com" target="_blank" rel="noreferrer"> <img src="https://koraypeker.com/wp-content/uploads/2018/06/1_xsrKVt69q3JsZzLD-ldekQ.jpeg" alt="maven" width="100" height="40"/> </a>
+<a href="https://www.jenkins.io/" target="_blank" rel="noreferrer"> <img src="https://media.bitdegree.org/storage/media/images/2018/11/jenkins-interview-questions-logo.png" alt="Jmeter" width="50" height="50"/> </a>
 
 <br/>
 <br/>
