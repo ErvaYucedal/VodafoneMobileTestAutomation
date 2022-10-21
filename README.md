@@ -2,7 +2,6 @@
 
 <hr/>
 <img src="https://github.com/ErvaYucedal/VodafoneMobileTestAutomation/blob/main/63012e0b4cf51-384x384.png" width="60" height="60">
-
 ### Yanımda Uygulaması <br/>
 
 Bana verilen taskte belirtildiği üzere; 
