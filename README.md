@@ -18,6 +18,15 @@ OOP kopsepte uyarak POM dizayn modeli kullandım.
 Projeyi yapılandırmak için Maven, versiyon kontrol aracı olarak Git/Github kullandım. 
 <br/>
 <br/>
+
+<a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="50" height="50"/> </a>
+<a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a>
+<a href="https://www.appium.com" target="_blank" rel="noreferrer"> <img src="https://miro.medium.com/max/698/0*Ar7dArTvLIGrRs2n.png" alt="Selenium" width="100" height="50"/> </a>
+<a href="https://www.intelj.com" target="_blank" rel="noreferrer"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQak-N8W03mK25slV1lwM80i0y1obRPPJOaLA&usqp=CAU" alt="intelj" width="80" height="40"/> </a>
+<a href="https://www.maven.com" target="_blank" rel="noreferrer"> <img src="https://koraypeker.com/wp-content/uploads/2018/06/1_xsrKVt69q3JsZzLD-ldekQ.jpeg" alt="maven" width="100" height="40"/> </a>
+
+<br/>
+<br/>
 Vysor uygulaması ile USB aracılığıyla gerçek telefona bağlandım. Appium la bağlantıyı gerçekleştirip
 Appium Inspector'la locate aldım. Appium Inspectorla alınamayan locateleri telefonumun koordinatlarını 
 açıp Touch Action classı ile koordinatları girerek testi tamamladım. <br/>
@@ -28,18 +37,10 @@ Xiaomi Note 9 Pro <br/>
 <br/>
 
 <br/>
-<img src="https://github.com/ErvaYucedal/VodafoneMobileTestAutomation/blob/main/appiumfoto.png" width="auto">
+<img src="https://github.com/ErvaYucedal/VodafoneMobileTestAutomation/blob/main/appiumfoto.png" width="100" height="100">
 
 
-<br/>
 
-<a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="50" height="50"/> </a>
-<a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a>
-<a href="https://www.appium.com" target="_blank" rel="noreferrer"> <img src="https://miro.medium.com/max/698/0*Ar7dArTvLIGrRs2n.png" alt="Selenium" width="100" height="50"/> </a>
-<a href="https://www.intelj.com" target="_blank" rel="noreferrer"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQak-N8W03mK25slV1lwM80i0y1obRPPJOaLA&usqp=CAU" alt="intelj" width="80" height="40"/> </a>
-<a href="https://www.maven.com" target="_blank" rel="noreferrer"> <img src="https://koraypeker.com/wp-content/uploads/2018/06/1_xsrKVt69q3JsZzLD-ldekQ.jpeg" alt="maven" width="100" height="40"/> </a>
-
-<br/>
 <hr/>
 
 ## Runner Dosyası <br/>
