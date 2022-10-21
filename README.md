@@ -21,7 +21,7 @@ Vysor uygulaması ile USB aracılığıyla gerçek telefona bağlandım. Appium 
 Appium Inspector'la locate aldım. Appium Inspectorla alınamayan locateleri telefonumun koordinatlarını 
 açıp Touch Action classı ile koordinatları girerek testi tamamladım. <br/>
 Xiaomi Note 9 Pro <br/>
-özellikler = Android 11,  ekran  1080 X 2400  <br/>
+Özellikler = Android 11,  ekran  1080 X 2400  <br/>
 <br/>
 <b>LÜTFEN BU ÖZELLİKLERE SAHİP TELEFONU KURUP TEST YAPINIZ.</b>
 <br/>
