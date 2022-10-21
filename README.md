@@ -8,13 +8,15 @@ gelen şifreyi parse ederek giriş yaptım. Her şey Yanımda menüsüne girerek
 Tekliflerine tıkladım. Ürün filtreleme yaparak filtrelenen ürünler arasından en düşük ücretli ürünü favorilere,
 en yüksek ücretli ürünü sepetime ekledim. 
 <br/>
-<hr/>
+
+<br/>
 Vodafone Yanımda mobil uygulamasının testlerini gerçekleştirdiğim bu projede önce manuel testi gerçekleştirdikten sonra
 mobil otomasyon testi için Java kodlama dilini ve  Cucumber BDD framework ile çalıştım. Cucumber Framework'unde
 OOP kopsepte uyarak POM dizayn modeli kullandım. 
 Projeyi yapılandırmak için Maven, versiyon kontrol aracı olarak Git/Github kullandım. 
-<hr/>
+<br/>
 
+<br/>
 Vsyor uygulaması ile USB aracılığıyla gerçek telefona bağlandım. Appium la bağlantıyı gerçekleştirip
 Appium Inspector'la locate aldım. Appium Inspectorla alamadığım locateleri telefonumun koordinatlarını 
 açıp Touch Action classı ile koordinatları girerek testi tamamladım. <br/>
@@ -24,7 +26,6 @@ Xiaomi Note 9 Pro <br/>
 <b>LÜTFEN BU ÖZELLİKLERE SAHİP TELEFONU KURUP TEST YAPINIZ.</b>
 <br/>
 
-<br/>
 
 <br/>
 <hr/>
