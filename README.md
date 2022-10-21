@@ -16,7 +16,6 @@ mobil otomasyon testi için Java kodlama dilini ve  Cucumber BDD framework ile �
 OOP kopsepte uyarak POM dizayn modeli kullandım. 
 Projeyi yapılandırmak için Maven, versiyon kontrol aracı olarak Git/Github kullandım. 
 <br/>
-
 <br/>
 Vysor uygulaması ile USB aracılığıyla gerçek telefona bağlandım. Appium la bağlantıyı gerçekleştirip
 Appium Inspector'la locate aldım. Appium Inspectorla alınamayan locateleri telefonumun koordinatlarını 
@@ -26,7 +25,6 @@ Xiaomi Note 9 Pro <br/>
 <br/>
 <b>LÜTFEN BU ÖZELLİKLERE SAHİP TELEFONU KURUP TEST YAPINIZ.</b>
 <br/>
-
 
 <br/>
 <hr/>
