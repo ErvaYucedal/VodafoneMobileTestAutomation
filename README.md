@@ -18,7 +18,7 @@ Projeyi yapılandırmak için Maven, versiyon kontrol aracı olarak Git/Github k
 
 <br/>
 Vysor uygulaması ile USB aracılığıyla gerçek telefona bağlandım. Appium la bağlantıyı gerçekleştirip
-Appium Inspector'la locate aldım. Appium Inspectorla alamadığım locateleri telefonumun koordinatlarını 
+Appium Inspector'la locate aldım. Appium Inspectorla alınamayan locateleri telefonumun koordinatlarını 
 açıp Touch Action classı ile koordinatları girerek testi tamamladım. <br/>
 Xiaomi Note 9 Pro <br/>
 özellikler = Android 11,  ekran  1080 X 2400  <br/>
