@@ -4,10 +4,9 @@
 
 Vodafone Yanımda mobil uygulamasının testlerini gerçekleştirdiğim bu projede 
 Cucumber BDD framework ile çalıştım.
-Cucumber Framework'ünde OOP(object oriented programming) konseptine uyarak  POM(page object model) dizayn modeli kullanılmıştır.
+Cucumber Framework'ünde OOP konseptine uyarak POM dizayn modeli kullandım.
 
 <br/>
-
 
 ### Runner Dosyası <br/>
 Runner classında kullandığım notasyonlar sayesinde burda çalıştırabildiğim <b>feature</b>  dosyalarının hem raporlarını alabiliyorum hemde istenilen methodların oluşturulması sağlanabiliyor 
@@ -16,31 +15,39 @@ Runner classında kullandığım notasyonlar sayesinde burda çalıştırabildi�
 Bu dosyada Yanımda mobil uygulamasının testlerini gerçekleştireceğim elementlerin locatelerini sakladığım class bulunmaktadır. 
 
 ### StepDefinitons Dosyası <br/>
-Step Definitions dosyasında  tüm kodlarımızın çalışmasını sağlayan methodlarımızın bulunduğu classlarımız vardır.Locatelerimizi , driverımız buraya çağırarak yapmak istediğimiz adımların kodlarını burda yazıyoruz
+Step Definitions dosyasında  tüm kodlarımın çalışmasını sağlayan methodlarımın bulunduğu class bulunmakta. Ayrıca ekran görüntüsü almak içinde bu dosyayı kullanıyorum. 
  
 ### Utilities Dosyası <br/>
 Utilies dosyasında sürekli lazım olan classlar ve methodlar bulunuyor. Kod tasarrufuna gitmeyi ve projeyi daha anlaşılır hale getirmeyi sağlıyor. 
 <b> ConfigReader.class</b> , <b> Driver.class </b> ,  <b> ReusableMehods.class </b>   dosyaları bulunmaktadır. 
 
-### resources Dosyası <br/>
-<b> feature </b> dosyalarımızın bulunduğu dosyamızdır burda <b>BDD</b> (behavior Driven Development) kullanılarak ve <b> Gherking </b> dili kullanılarak featuremiz oluşturuluyor.oluşturduğumuz adımları direk 
-method olarak oluşturma fırsatı tanımakta bu sayede java dili yada yazılım ile alakası olmayan kişilerinde yapılanları daha anlaşılır bir hale getirrilmesini sağlamaktadır 
+### Resources Dosyası <br/>
+<b> feature </b> dosyasının bulunduğu dosyadır.Burda <b>BDD</b> (behavior Driven Development) kullanılarak ve <b> Gherking </b> dili kullanılarak featuremiz oluşturuluyor.Java kodlama dilini bilmeyen kişilerin daha iyi anlamasını sağlamaktadır.
 
 ### <b> Configuration.properties </b>
-properties dosyamızda sürekli kullandığımız variablelarımız bulunmakta , bu veriabları kullanmak için properties dosyası <b> Key  =  value </b> olaraka oluşturulmakta ,burdaki bilgileri başaka classlara çağırabilmek için utilities dosyasından
+Properties dosyamızda sürekli kullandığımız variablelarımız bulunmakta , bu veriabları kullanmak için properties dosyası <b> Key  =  value </b> olaraka oluşturulmakta ,burdaki bilgileri başaka classlara çağırabilmek için utilities dosyasından
 <b> ConfigReader </b> classı çağırırlara içindeki method saysınde bu bosyada bulunan bilgileri istediğimiz yerlere çağırabiliriz.
 
 ## pom.xml
-tüm çalışmlaraımızın ve kodlarımızın bilgilerinin bulunduğu bu dosyada aslında kullanmak istediğimiz kodalrın kütüphanesini  <b> dependencies </b> tagının içerisine yerleştirip güncel bilgilerini sürekli olarak kendimizde tutabiliriz.
-burası sayaesinde tüm kodlara erişimi sağlayabiliriz.
+Pom.xml dosyasında kullanmak istediğimiz kodların kütüphanesini  <b> dependencies </b> tagının içerisine yerleştirip güncel bilgilerini sürekli olarak kendimizde tutabiliriz.
 
 <hr/>
 
 # Appium testi
 
+### Yanımda Uygulaması <br/>
+Java8  ve Maven projesi oluşturulup cucumber BDD framework kullanılarak oluşturulmuştur.
+
+Vsyor uygulaması ile USB aracılığıyla gerçek telefona bağlandım. <br/>
+Xiaomi Note 9 Pro <br/>
+özellikler = Android 11,  ekran  1080 X 2400  <br/>
+<br/>
+<b>LÜTFEN BU ÖZELLİKLERE SAHİP TELEFONU KURUP TEST YAPINIZ.</b>
 <br/>
 
-Java8  ve Maven projesi oluşturulup cucumber BDD framework kullanılarak oluşturulmuştur. 
+<br/>
+
+ 
 
 <br/>
 
@@ -53,14 +60,6 @@ Java8  ve Maven projesi oluşturulup cucumber BDD framework kullanılarak oluşt
 
 <br/>
 
-### Yanımda Uygulaması <br/>
-
-Vsyor uygulaması ile USB aracılığıyla gerçek telefona bağlandım. <br/>
-Xiaomi Note 9 Pro <br/>
-özellikler = Android 11,  ekran  1080 X 2400  <br/>
-<br/>
-<b>LÜTFEN BU ÖZELLİKLERE SAHİP TELEFONU KURUP TEST YAPINIZ.</b>
-<br/>
 
 
 
