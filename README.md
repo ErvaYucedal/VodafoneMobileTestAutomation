@@ -1,6 +1,7 @@
 # VodafoneMobileTestAutomation
 
 <hr/>
+<img src="https://github.com/ErvaYucedal/VodafoneMobileTestAutomation/blob/main/63012e0b4cf51-384x384.png" width="auto">
 
 ### Yanımda Uygulaması <br/>
 
