@@ -5,10 +5,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
-import org.openqa.selenium.By;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
-
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -32,23 +29,16 @@ public class Driver {
             desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, ConfigReader.getProperty("platformName"));
             desiredCapabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, ConfigReader.getProperty("platformVersion"));
             desiredCapabilities.setCapability(MobileCapabilityType.DEVICE_NAME, ConfigReader.getProperty("deviceName"));
-       //     desiredCapabilities.setCapability(MobileCapabilityType.APP, System.getProperty("user.dir")+ConfigReader.getProperty("appPath"));
           desiredCapabilities.setCapability(MobileCapabilityType.APP, "C:\\Users\\Meral\\IdeaProjects\\com.VodafoneMobileTestAutomation\\app\\com.vodafone.selfservis_15.9.6-24602_minAPI21(arm64-v8a,armeabi-v7a)(nodpi)_apkmirror.com.apk");
             desiredCapabilities.setCapability(MobileCapabilityType.NO_RESET, true);
             desiredCapabilities.setCapability("autoAcceptAlert",true);
             desiredCapabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT,"60000");
 
             if (ConfigReader.getProperty("platformName").equals("Android")) {
-                //if you do not provide app path so you should provide "appPackage" and "appActivity"
-
-           //
-
 
                 assert appiumServerURL != null;
                 appiumDriver = new AndroidDriver(appiumServerURL,desiredCapabilities);
             } else if (ConfigReader.getProperty("platformName").equals("iOS")) {
-                //if you do not provide app path so you should use "bundleId"
-//                desiredCapabilities.setCapability("bundleId",ConfigReader.getProperty("iosBundleId"));
                 assert appiumServerURL != null;
                 appiumDriver = new IOSDriver(appiumServerURL,desiredCapabilities);
             } else {
@@ -65,12 +55,5 @@ public class Driver {
             appiumDriver.quit();
             appiumDriver = null;
         }
-    }
-
-
-
-
-    public void findElement(By xpath) {
-        return;
     }
 }

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="232.312">
+<testcase classname="Vodafone customer should be able to do shopping with filtering and listing" name="Vodafone customer do shopping with filtering and listing" time="232.108">
+<system-out><![CDATA[Given Opening app with Appium...............................................passed
+And Login to the Yanimda as a VF customer...................................passed
+Then Customer clicks Her Sey Yanimda application............................passed
+And Customer clicks Gunun Teklifleri page...................................passed
+And Customer clicks "Filtrele" section......................................passed
+And Customer clicks Fiyat Araligi...........................................passed
+And Customer lists the products from the Gunun Teklifleri between "150"-"200" TL.passed
+Then Customer clicks Sirala and chooses En Dusuk Fiyat......................passed
+And Customer adds the cheapest product to his-her favorites.................passed
+And Customer clicks Sirala and chooses En Yuksek Fiyat......................passed
+And Customer adds the most expensive product to his-her basket..............passed
+]]></system-out>
+</testcase>
+</testsuite>

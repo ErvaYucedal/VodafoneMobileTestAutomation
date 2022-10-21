@@ -1,0 +1,177 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-10-21T09:11:12.242Z",
+        "line": 4,
+        "name": "Vodafone customer do shopping with filtering and listing",
+        "description": "",
+        "id": "vodafone-customer-should-be-able-to-do-shopping-with-filtering-and-listing;vodafone-customer-do-shopping-with-filtering-and-listing",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13334000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Opening app with Appium",
+            "match": {
+              "location": "stepDefinitions.VodafoneStepDefinitions.opening_app_with_appium()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 54107000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Login to the Yanimda as a VF customer",
+            "match": {
+              "location": "stepDefinitions.VodafoneStepDefinitions.loginToTheYanimdaAsAVFCustomer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5265000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Customer clicks Her Sey Yanimda application",
+            "match": {
+              "location": "stepDefinitions.VodafoneStepDefinitions.customerClicksHerSeyYanimdaApplication()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 16702000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Customer clicks Gunun Teklifleri page",
+            "match": {
+              "location": "stepDefinitions.VodafoneStepDefinitions.customerClicksGununTeklifleriPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8655000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Customer clicks \"Filtrele\" section",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Filtrele\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepDefinitions.VodafoneStepDefinitions.customerClicksSection(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10329000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Customer clicks Fiyat Araligi",
+            "match": {
+              "location": "stepDefinitions.VodafoneStepDefinitions.customerClicksFiyatAraligi()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 102106000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Customer lists the products from the Gunun Teklifleri between \"150\"-\"200\" TL",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"150\"",
+                  "offset": 62
+                },
+                {
+                  "val": "\"200\"",
+                  "offset": 68
+                }
+              ],
+              "location": "stepDefinitions.VodafoneStepDefinitions.customerListsTheProductsFromTheGununTeklifleriBetweenTL(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6196000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Customer clicks Sirala and chooses En Dusuk Fiyat",
+            "match": {
+              "location": "stepDefinitions.VodafoneStepDefinitions.customerClicksSiralaAndChoosesEnDusukFiyat()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3329000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Customer adds the cheapest product to his-her favorites.",
+            "match": {
+              "location": "stepDefinitions.VodafoneStepDefinitions.customerAddsTheCheapestProductToHisHerFavorites()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4309000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Customer clicks Sirala and chooses En Yuksek Fiyat",
+            "match": {
+              "location": "stepDefinitions.VodafoneStepDefinitions.customerClicksSiralaAndChoosesEnYuksekFiyat()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7712000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Customer adds the most expensive product to his-her basket.",
+            "match": {
+              "location": "stepDefinitions.VodafoneStepDefinitions.customerAddsTheMostExpensiveProductToHisHerBasket()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@yanimda"
+          }
+        ]
+      }
+    ],
+    "name": "Vodafone customer should be able to do shopping with filtering and listing",
+    "description": "",
+    "id": "vodafone-customer-should-be-able-to-do-shopping-with-filtering-and-listing",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/Vodafone.feature",
+    "tags": []
+  }
+]
