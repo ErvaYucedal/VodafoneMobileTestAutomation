@@ -17,7 +17,7 @@ Projeyi yapılandırmak için Maven, versiyon kontrol aracı olarak Git/Github k
 <br/>
 
 <br/>
-Vsyor uygulaması ile USB aracılığıyla gerçek telefona bağlandım. Appium la bağlantıyı gerçekleştirip
+Vysor uygulaması ile USB aracılığıyla gerçek telefona bağlandım. Appium la bağlantıyı gerçekleştirip
 Appium Inspector'la locate aldım. Appium Inspectorla alamadığım locateleri telefonumun koordinatlarını 
 açıp Touch Action classı ile koordinatları girerek testi tamamladım. <br/>
 Xiaomi Note 9 Pro <br/>
