@@ -29,23 +29,24 @@ Xiaomi Note 9 Pro <br/>
 
 <br/>
 <hr/>
-### Runner Dosyası <br/>
+
+## Runner Dosyası <br/>
 Runner classında kullandığım notasyonlar sayesinde burda çalıştırabildiğim <b>feature</b>  dosyalarının hem raporlarını alabiliyorum hemde istenilen methodların oluşturulması sağlanabiliyor 
 
-### Screen Dosyası <br/>
+## Screen Dosyası <br/>
 Bu dosyada Yanımda mobil uygulamasının testlerini gerçekleştireceğim elementlerin locatelerini sakladığım class bulunmaktadır. 
 
-### StepDefinitons Dosyası <br/>
+## StepDefinitons Dosyası <br/>
 Step Definitions dosyasında  tüm kodlarımın çalışmasını sağlayan methodlarımın bulunduğu class bulunmakta. Ayrıca ekran görüntüsü almak içinde bu dosyayı kullanıyorum. 
  
 ### Utilities Dosyası <br/>
 Utilies dosyasında sürekli lazım olan classlar ve methodlar bulunuyor. Kod tasarrufuna gitmeyi ve projeyi daha anlaşılır hale getirmeyi sağlıyor. 
 <b> ConfigReader.class</b> , <b> Driver.class </b> ,  <b> ReusableMehods.class </b>   dosyaları bulunmaktadır. 
 
-### Resources Dosyası <br/>
+## Resources Dosyası <br/>
 <b> feature </b> dosyasının bulunduğu dosyadır.Burda <b>BDD</b> (behavior Driven Development) kullanılarak ve <b> Gherking </b> dili kullanılarak featuremiz oluşturuluyor.Java kodlama dilini bilmeyen kişilerin daha iyi anlamasını sağlamaktadır.
 
-### <b> Configuration.properties </b>
+## <b> Configuration.properties </b>
 Properties dosyamızda sürekli kullandığımız variablelarımız bulunmakta , bu veriabları kullanmak için properties dosyası <b> Key  =  value </b> olaraka oluşturulmakta ,burdaki bilgileri başaka classlara çağırabilmek için utilities dosyasından
 <b> ConfigReader </b> classı çağırırlara içindeki method saysınde bu bosyada bulunan bilgileri istediğimiz yerlere çağırabiliriz.
 
