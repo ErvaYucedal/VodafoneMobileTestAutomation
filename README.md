@@ -2,11 +2,12 @@
 
 <hr/>
 ### Yanımda Uygulaması <br/>
-Bana verilen taskte belirtildiği üzere; 
-Vodafone Yanımda uygulamasına müşteri girişi yapmak için kullanıcı bilgilerini girdim ve telefonuma 
-gelen şifreyi parse ederek giriş yaptım. Her şey Yanımda menüsüne tıklayarak Günün
+<br/>Bana verilen taskte belirtildiği üzere; 
+<br/>Vodafone Yanımda uygulamasına müşteri girişi yapmak için kullanıcı bilgilerini girdim ve telefonuma 
+gelen şifreyi parse ederek giriş yaptım. Her şey Yanımda menüsüne girerek Günün
 Tekliflerine tıkladım. Ürün filtreleme yaparak filtrelenen ürünler arasından en düşük ücretli ürünü favorilere,
 en yüksek ücretli ürünü sepetime ekledim. 
+<br/>
 Vodafone Yanımda mobil uygulamasının testlerini gerçekleştirdiğim bu projede Java8 ve Maven projesi oluşturup
 Cucumber BDD framework ile çalıştım. Cucumber Framework'unde OOP kopsepte uyarak POM dizayn modeli kullandım.
 
