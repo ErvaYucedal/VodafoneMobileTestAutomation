@@ -8,9 +8,10 @@ gelen şifreyi parse ederek giriş yaptım. Her şey Yanımda menüsüne girerek
 Tekliflerine tıkladım. Ürün filtreleme yaparak filtrelenen ürünler arasından en düşük ücretli ürünü favorilere,
 en yüksek ücretli ürünü sepetime ekledim. 
 <br/>
+<hr/>
 Vodafone Yanımda mobil uygulamasının testlerini gerçekleştirdiğim bu projede Java8 ve Maven projesi oluşturup
 Cucumber BDD framework ile çalıştım. Cucumber Framework'unde OOP kopsepte uyarak POM dizayn modeli kullandım.
-
+<hr/>
 
 Vsyor uygulaması ile USB aracılığıyla gerçek telefona bağlandım. Appium la bağlantıyı gerçekleştirip
 Appium Inspector'la locate aldım. Appium Inspectorla alamadığım locateleri telefonumun koordinatlarını 
