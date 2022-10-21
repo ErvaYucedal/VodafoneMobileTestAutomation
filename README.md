@@ -1,7 +1,9 @@
 # VodafoneMobileTestAutomation
 
+
 <hr/>
-<img src="https://github.com/ErvaYucedal/VodafoneMobileTestAutomation/blob/main/63012e0b4cf51-384x384.png" width="60" height="60">
+<img src="https://user-images.githubusercontent.com/102468536/197184573-1958b22a-ace3-45aa-bfb2-199dd5e677b8.png" width="60" height="60">
+a
 
 ### Yanımda Uygulaması <br/>
 
@@ -37,7 +39,7 @@ Xiaomi Note 9 Pro <br/>
 <br/>
 
 <br/>
-<img src="https://github.com/ErvaYucedal/VodafoneMobileTestAutomation/blob/main/appiumfoto.png" width="auto" >
+<img src="https://user-images.githubusercontent.com/102468536/197184856-2fca3717-09cf-481f-8405-63c30dec2910.png" width="auto" >
 <img src="https://user-images.githubusercontent.com/102468536/197184229-71247f2d-0e8b-4f95-be72-ef2ff6ab334a.png" width="auto" >
 
 
