@@ -9,8 +9,10 @@ Tekliflerine tıkladım. Ürün filtreleme yaparak filtrelenen ürünler arasın
 en yüksek ücretli ürünü sepetime ekledim. 
 <br/>
 <hr/>
-Vodafone Yanımda mobil uygulamasının testlerini gerçekleştirdiğim bu projede Java8 ve Maven projesi oluşturup
-Cucumber BDD framework ile çalıştım. Cucumber Framework'unde OOP kopsepte uyarak POM dizayn modeli kullandım.
+Vodafone Yanımda mobil uygulamasının testlerini gerçekleştirdiğim bu projede önce manuel testi gerçekleştirdikten sonra
+mobil otomasyon testi için Java kodlama dilini ve  Cucumber BDD framework ile çalıştım. Cucumber Framework'unde
+OOP kopsepte uyarak POM dizayn modeli kullandım. 
+Projeyi yapılandırmak için Maven, versiyon kontrol aracı olarak Git/Github kullandım. 
 <hr/>
 
 Vsyor uygulaması ile USB aracılığıyla gerçek telefona bağlandım. Appium la bağlantıyı gerçekleştirip
@@ -25,7 +27,7 @@ Xiaomi Note 9 Pro <br/>
 <br/>
 
 <br/>
-
+<hr/>
 ### Runner Dosyası <br/>
 Runner classında kullandığım notasyonlar sayesinde burda çalıştırabildiğim <b>feature</b>  dosyalarının hem raporlarını alabiliyorum hemde istenilen methodların oluşturulması sağlanabiliyor 
 
