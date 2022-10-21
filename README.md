@@ -4,7 +4,7 @@
 
 ### Yanımda Uygulaması <br/>
 
-<br/>Bana verilen taskte belirtildiği üzere; 
+Bana verilen taskte belirtildiği üzere; 
 <br/>Vodafone Yanımda uygulamasına müşteri girişi yapmak için kullanıcı bilgilerini girdim ve telefonuma 
 gelen şifreyi parse ederek giriş yaptım. Her şey Yanımda menüsüne girerek Günün
 Tekliflerine tıkladım. Ürün filtreleme yaparak filtrelenen ürünler arasından en düşük ücretli ürünü favorilere,
