@@ -38,7 +38,7 @@ Xiaomi Note 9 Pro <br/>
 
 <br/>
 <img src="https://github.com/ErvaYucedal/VodafoneMobileTestAutomation/blob/main/appiumfoto.png" width="auto" >
-
+<img src="https://github.com/ErvaYucedal/VodafoneMobileTestAutomation/blob/main/Rapor1.png" width="auto" >
 
 
 <hr/>
