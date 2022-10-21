@@ -3,7 +3,7 @@
 
 <hr/>
 <img src="https://user-images.githubusercontent.com/102468536/197184573-1958b22a-ace3-45aa-bfb2-199dd5e677b8.png" width="60" height="60">
-a
+
 
 ### Yanımda Uygulaması <br/>
 
